@@ -112,6 +112,12 @@ header > section > h1 {
 }
 /***** END HEADER *****/
 
+/***** START LANDING HERO *****/
+#landing-content {
+  margin: var(--mobile-frame-margin);
+}
+/***** END LANDING HERO *****/
+
 /***** START CARDS *****/
 .content-card {
   background-color: white;
