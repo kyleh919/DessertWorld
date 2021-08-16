@@ -1,0 +1,121 @@
+/* START GLOBAL DEFS */
+:root {
+  /* COLORS */
+  --main-bg-color: #efefef;
+
+  /* FONTS */
+  --font-style-primary: Nunito;
+  --font-style-secondary: Inter;
+
+  /* FONT SIZES */
+  --font-size-header-1: 34px;
+  --font-size-header-2: 28px;
+  --font-size-body-1: 18px;
+
+  /* MARGINS */
+  --mobile-frame-margin: 22px;
+}
+/* END GLOBAL DEFS */
+
+/* START MISCELLANEOUS */
+body {
+  background-color: var(--main-bg-color);
+
+  margin: 0;
+}
+
+.landing-image {
+  width: 100%;
+}
+/* END MISCELLANEOUS */
+
+/* START TYPOGRAPHY */
+h1,
+h2 {
+  font-family: var(--font-style-primary);
+}
+
+h1 {
+  font-size: var(--font-size-header-1);
+}
+
+h2 {
+  font-size: var(--font-size-header-2);
+}
+
+p {
+  font-family: var(--font-style-secondary);
+  font-size: var(--font-size-body-1);
+}
+/* END TYPOGRAPHY */
+
+/* COMPONENTS */
+
+/* START BUTTONS */
+button {
+  cursor: pointer;
+}
+
+.icon-button {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+}
+
+.icon-button-image {
+  width: 28px;
+  height: 28px;
+}
+
+/* PRIMARY BUTTON GENERIC STYLING */
+.primary-button {
+  background-color: white;
+  border-radius: 25px;
+}
+
+.primary-button-text {
+  font-size: var(--font-size-body-1);
+  font-family: var(--font-style-primary);
+  font-weight: 900;
+}
+
+/* PRIMARY BUTTON FILLED */
+.primary-filled-button {
+  border: none;
+  /* padding: 12px 19px 12px 19px; */
+}
+
+/* PRIMARY BUTTON OUTLINED */
+.primary-outlined-button {
+  border: 1px solid black;
+}
+
+/* SPECIFIC BUTTONS */
+#order-now-button {
+  width: 128px;
+  height: 44px;
+}
+
+#see-this-weeks-menu-button {
+  width: 213px;
+  height: 44px;
+}
+
+/* END BUTTONS */
+
+/* START HEADER */
+
+header > section {
+  margin: var(--mobile-frame-margin);
+  display: flex;
+}
+
+header > section > h1 {
+  flex: 1;
+}
+/* END HEADER */
+
+/* START CARDS */
+.content-card {
+  background-color: white;
+}
+/* END CARDS */
