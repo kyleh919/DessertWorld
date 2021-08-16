@@ -1,4 +1,4 @@
-/* START GLOBAL DEFS */
+/********** GLOBALS **********/
 :root {
   /* COLORS */
   --main-bg-color: #efefef;
@@ -15,7 +15,7 @@
   /* MARGINS */
   --mobile-frame-margin: 22px;
 }
-/* END GLOBAL DEFS */
+/********** END GLOBALS **********/
 
 /* START MISCELLANEOUS */
 body {
@@ -29,7 +29,7 @@ body {
 }
 /* END MISCELLANEOUS */
 
-/* START TYPOGRAPHY */
+/********** TYPOGRAPHY **********/
 h1,
 h2 {
   font-family: var(--font-style-primary);
@@ -47,11 +47,10 @@ p {
   font-family: var(--font-style-secondary);
   font-size: var(--font-size-body-1);
 }
-/* END TYPOGRAPHY */
+/********** END TYPOGRAPHY **********/
 
-/* COMPONENTS */
-
-/* START BUTTONS */
+/********** COMPONENTS **********/
+/***** START BUTTONS *****/
 button {
   cursor: pointer;
 }
@@ -100,10 +99,9 @@ button {
   height: 44px;
 }
 
-/* END BUTTONS */
+/***** END BUTTONS *****/
 
-/* START HEADER */
-
+/***** START HEADER *****/
 header > section {
   margin: var(--mobile-frame-margin);
   display: flex;
@@ -112,10 +110,11 @@ header > section {
 header > section > h1 {
   flex: 1;
 }
-/* END HEADER */
+/***** END HEADER *****/
 
-/* START CARDS */
+/***** START CARDS *****/
 .content-card {
   background-color: white;
 }
-/* END CARDS */
+/***** END CARDS *****/
+/********** END COMPONENTS **********/
