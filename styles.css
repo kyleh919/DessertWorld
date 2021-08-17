@@ -216,13 +216,13 @@ footer {
   text-decoration: none;
 }
 
-#legal-links > ul {
+#legal-links-nav > ul {
   list-style: none;
   margin: 32px 0px 32px var(--mobile-frame-margin);
   padding: 0px;
 }
 
-#legal-links > ul > li {
+#legal-links-nav > ul > li {
   margin-bottom: 16px;
 }
 
