@@ -229,14 +229,6 @@ footer {
   /***** END HEADER *****/
 
   /***** START LANDING HERO *****/
-  #landing-hero {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-    padding: var(--desktop-vertical-margin) var(--desktop-horizontal-margin)
-      var(--desktop-vertical-margin) var(--desktop-horizontal-margin);
-  }
-
   #landing-content {
     background-color: var(--tablet-hero-bg-color);
     margin: 0px;
@@ -253,5 +245,32 @@ footer {
     display: block;
   }
   /***** END LANDING HERO *****/
+
+  /***** START CONTENT CARDS *****/
+  .content-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    margin: var(--desktop-vertical-margin) var(--desktop-horizontal-margin)
+      var(--desktop-vertical-margin) var(--desktop-horizontal-margin);
+  }
+
+  #second-content-card > .content-card-image {
+    grid-row: 1/2;
+  }
+
+  #fourth-content-card > .content-card-image {
+    grid-row: 1/2;
+  }
+
+  .content {
+    margin: 0px;
+    padding: var(--desktop-card-content-left-padding);
+  }
+
+  .content-card-image {
+    width: 100%;
+  }
+  /***** END CONTENT CARDS *****/
 }
 /********** END LAPTOP MEDIA QUERY **********/
