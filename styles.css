@@ -1,23 +1,35 @@
 /********** GLOBALS **********/
 :root {
-  /* COLOR PALETTE */
+  /***** COLOR PALETTE *****/
   --main-bg-color: #efefef;
+  --header-bg-color: #f8f8f8;
+  --footer-bg-color: #f8f8f8;
   --tablet-hero-bg-color: #000203;
 
-  /* FONTS */
+  /***** FONTS *****/
   --font-style-primary: Nunito;
   --font-style-secondary: Inter;
   --font-color-light: #f8f8f8;
   --font-color-dark: #0b0b0b;
 
-  /* FONT SIZES */
+  /***** FONT SIZES *****/
   --font-size-header-1: 34px;
   --font-size-header-2: 28px;
   --font-size-body-1: 18px;
 
-  /* MARGINS */
+  /***** SPACING *****/
+  /* MOBILE */
   --mobile-frame-margin: 22px;
+
+  /* TABLET */
   --tablet-frame-margin: 40px;
+  --tablet-content-card-vertical-margin: 48px;
+
+  /* DESKTOP */
+  --desktop-vertical-margin: 64px;
+  --desktop-horizontal-margin: 80px;
+  --desktop-card-content-left-padding: 56px;
+  --desktop-card-content-top-padding: 120px;
 }
 /********** END GLOBALS **********/
 
@@ -99,11 +111,25 @@ button {
   height: 44px;
 }
 
+#view-menu-button {
+  width: 141px;
+  height: 44px;
+}
+
+#see-dessert-of-the-week-button {
+  width: 238px;
+  height: 44px;
+}
+
 /***** END BUTTONS *****/
 
 /***** START HEADER *****/
+header {
+  background-color: var(--header-bg-color);
+}
+
 header > section {
-  margin: var(--mobile-frame-margin);
+  margin: 0px var(--mobile-frame-margin) 0px var(--mobile-frame-margin);
   display: flex;
 }
 
@@ -125,10 +151,16 @@ header > section > h1 {
 /***** END LANDING HERO *****/
 
 /***** START CARDS *****/
-.content-card {
+.secondary-content-card {
   background-color: white;
 }
 /***** END CARDS *****/
+
+/***** START FOOTER *****/
+footer {
+  background-color: var(--header-bg-color);
+}
+/***** END FOOTER *****/
 /********** END COMPONENTS **********/
 
 /********** START MOBILE MEDIA QUERY **********/
@@ -141,16 +173,11 @@ header > section > h1 {
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   /***** START HEADER *****/
   header > section {
-    margin: var(--tablet-frame-margin);
+    margin: 0px var(--tablet-frame-margin) 0px var(--tablet-frame-margin);
   }
   /***** END HEADER *****/
 
   /***** START LANDING HERO *****/
-  #landing-hero {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
   #landing-content {
     background-color: var(--tablet-hero-bg-color);
     margin: 0px;
@@ -159,24 +186,64 @@ header > section > h1 {
 
   .landing-content-text {
     color: var(--font-color-light);
-    /* margin-bottom: 24px; */
   }
 
   #landing-description {
     display: block;
   }
   /***** END LANDING HERO *****/
+
+  /***** START CONTENT CARDS *****/
+  .content-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .content {
+    margin: 0px;
+    padding: var(--tablet-frame-margin);
+  }
+
+  .content-card-image {
+    width: 100%;
+  }
+  /***** END CONTENT CARDS *****/
 }
 /********** END TABLET MEDIA QUERY **********/
 
 /********** START LAPTOP MEDIA QUERY **********/
 @media screen and (min-width: 1024px) {
-  h1 {
-    color: blue;
+  /***** START HEADER *****/
+  header > section {
+    margin: 0px var(--desktop-horizontal-margin) 0px
+      var(--desktop-horizontal-margin);
+  }
+  /***** END HEADER *****/
+
+  /***** START LANDING HERO *****/
+  #landing-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    padding: var(--desktop-vertical-margin) var(--desktop-horizontal-margin)
+      var(--desktop-vertical-margin) var(--desktop-horizontal-margin);
+  }
+
+  #landing-content {
+    background-color: var(--tablet-hero-bg-color);
+    margin: 0px;
+    padding-top: var(--desktop-card-content-left-padding);
+    padding-left: var(--desktop-card-content-left-padding);
+  }
+
+  .landing-content-text {
+    color: var(--font-color-light);
+    margin-bottom: 32px;
   }
 
   #landing-description {
     display: block;
   }
+  /***** END LANDING HERO *****/
 }
 /********** END LAPTOP MEDIA QUERY **********/
