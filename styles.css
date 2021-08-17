@@ -11,12 +11,14 @@
   --font-style-secondary: Inter;
   --font-color-light: #f8f8f8;
   --font-color-dark: #0b0b0b;
+  --font-color-caption: #575757;
 
   /***** FONT SIZES *****/
   --font-size-header-1: 34px;
   --font-size-header-2: 28px;
   --font-size-body-1: 18px;
   --font-size-nav-items: 18px;
+  --font-size-caption: 13px;
 
   /***** SPACING *****/
   /* MOBILE */
@@ -45,7 +47,8 @@ body {
 /********** TYPOGRAPHY **********/
 header,
 h1,
-h2 {
+h2,
+a {
   font-family: var(--font-style-primary);
 }
 
@@ -173,14 +176,33 @@ header > section > h1 {
 /***** END LANDING HERO *****/
 
 /***** START CARDS *****/
-.secondary-content-card {
+.content {
   background-color: white;
+  width: 331px;
+  padding: 36px;
+}
+
+.secondary-content-card > .content > h2 {
+  margin: 0px 0px 16px 0px;
+}
+
+.secondary-content-card > .content > p {
+  margin: 0px 0px 32px 0px;
+}
+
+.content-card-image {
+  width: 100%;
 }
 /***** END CARDS *****/
 
 /***** START FOOTER *****/
 footer {
   background-color: var(--header-bg-color);
+}
+
+#copyright {
+  font-size: var(--font-size-caption);
+  color: var(--font-color-caption);
 }
 /***** END FOOTER *****/
 /********** END COMPONENTS **********/
