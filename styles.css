@@ -256,6 +256,7 @@ footer {
 
   /***** START LANDING HERO *****/
   #landing-content {
+    position: static;
     background-color: var(--tablet-hero-bg-color);
     margin: 0px;
     padding: var(--tablet-frame-margin);
@@ -316,6 +317,7 @@ footer {
 
   /***** START LANDING HERO *****/
   #landing-content {
+    position: static;
     background-color: var(--tablet-hero-bg-color);
     margin: 0px;
     padding-top: var(--desktop-card-content-left-padding);
