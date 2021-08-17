@@ -286,6 +286,7 @@ footer {
   }
 
   .content {
+    width: auto;
     margin: 0px;
     padding: var(--tablet-frame-margin);
   }
@@ -352,6 +353,7 @@ footer {
   }
 
   .content {
+    width: auto;
     margin: 0px;
     padding: var(--desktop-card-content-left-padding);
   }
