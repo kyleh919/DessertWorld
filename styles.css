@@ -1,11 +1,14 @@
 /********** GLOBALS **********/
 :root {
-  /* COLORS */
+  /* COLOR PALETTE */
   --main-bg-color: #efefef;
+  --tablet-hero-bg-color: #000203;
 
   /* FONTS */
   --font-style-primary: Nunito;
   --font-style-secondary: Inter;
+  --font-color-light: #f8f8f8;
+  --font-color-dark: #0b0b0b;
 
   /* FONT SIZES */
   --font-size-header-1: 34px;
@@ -14,6 +17,7 @@
 
   /* MARGINS */
   --mobile-frame-margin: 22px;
+  --tablet-frame-margin: 40px;
 }
 /********** END GLOBALS **********/
 
@@ -22,10 +26,6 @@ body {
   background-color: var(--main-bg-color);
 
   margin: 0;
-}
-
-.landing-image {
-  width: 100%;
 }
 /* END MISCELLANEOUS */
 
@@ -116,6 +116,12 @@ header > section > h1 {
 #landing-content {
   margin: var(--mobile-frame-margin);
 }
+
+#landing-image {
+  width: 100%;
+  /* position: absolute;
+  top: 240px; */
+}
 /***** END LANDING HERO *****/
 
 /***** START CARDS *****/
@@ -124,3 +130,53 @@ header > section > h1 {
 }
 /***** END CARDS *****/
 /********** END COMPONENTS **********/
+
+/********** START MOBILE MEDIA QUERY **********/
+#landing-description {
+  display: none;
+}
+/********** END MOBILE MEDIA QUERY **********/
+
+/********** START TABLET MEDIA QUERY **********/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /***** START HEADER *****/
+  header > section {
+    margin: var(--tablet-frame-margin);
+  }
+  /***** END HEADER *****/
+
+  /***** START LANDING HERO *****/
+  #landing-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #landing-content {
+    background-color: var(--tablet-hero-bg-color);
+    margin: 0px;
+    padding: var(--tablet-frame-margin);
+  }
+
+  .landing-content-text {
+    color: var(--font-color-light);
+    /* margin-bottom: 24px; */
+  }
+
+  #landing-description {
+    display: block;
+  }
+  /***** END LANDING HERO *****/
+}
+/********** END TABLET MEDIA QUERY **********/
+
+/********** START LAPTOP MEDIA QUERY **********/
+@media screen and (min-width: 1024px) {
+  h1 {
+    color: blue;
+  }
+
+  #landing-description {
+    display: block;
+  }
+}
+/********** END LAPTOP MEDIA QUERY **********/
