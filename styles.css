@@ -199,6 +199,14 @@ footer {
     grid-template-columns: 1fr 1fr;
   }
 
+  #second-content-card > .content-card-image {
+    grid-row: 1/2;
+  }
+
+  #fourth-content-card > .content-card-image {
+    grid-row: 1/2;
+  }
+
   .content {
     margin: 0px;
     padding: var(--tablet-frame-margin);
