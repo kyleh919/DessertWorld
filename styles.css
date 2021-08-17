@@ -162,13 +162,13 @@ header > section > h1 {
 
 /***** START LANDING HERO *****/
 #landing-content {
+  position: absolute;
   margin: var(--mobile-frame-margin);
+  color: var(--font-color-light);
 }
 
 #landing-image {
   width: 100%;
-  /* position: absolute;
-  top: 240px; */
 }
 /***** END LANDING HERO *****/
 
