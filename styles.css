@@ -64,7 +64,8 @@ h2 {
   font-size: var(--font-size-nav-items);
 }
 
-p {
+p,
+.legal-links-items > a {
   font-family: var(--font-style-secondary);
   font-size: var(--font-size-body-1);
 }
@@ -198,6 +199,26 @@ header > section > h1 {
 /***** START FOOTER *****/
 footer {
   background-color: var(--header-bg-color);
+}
+
+#legal-links > ul {
+  list-style: none;
+  margin: 32px 0px 32px var(--mobile-frame-margin);
+  padding: 0px;
+}
+
+#legal-links > ul > li {
+  margin-bottom: 16px;
+}
+
+.legal-links-items > a {
+  /* margin-bottom: 16px; */
+  text-decoration: none;
+  color: var(--font-color-dark);
+}
+
+.legal-links-items > a:hover {
+  text-decoration: underline;
 }
 
 #copyright {
