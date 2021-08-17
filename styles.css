@@ -239,6 +239,7 @@ footer {
 #copyright {
   font-size: var(--font-size-caption);
   color: var(--font-color-caption);
+  margin: 0px 0px 28px var(--mobile-frame-margin);
 }
 /***** END FOOTER *****/
 /********** END COMPONENTS **********/
