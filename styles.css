@@ -293,11 +293,7 @@ footer {
     grid-template-columns: 1fr 1fr;
   }
 
-  #second-content-card > .content-card-image {
-    grid-row: 1/2;
-  }
-
-  #fourth-content-card > .content-card-image {
+  .content-card:nth-child(odd) > .content-card-image {
     grid-row: 1/2;
   }
 
@@ -360,11 +356,7 @@ footer {
       var(--desktop-vertical-margin) var(--desktop-horizontal-margin);
   }
 
-  #second-content-card > .content-card-image {
-    grid-row: 1/2;
-  }
-
-  #fourth-content-card > .content-card-image {
+  .content-card:nth-child(odd) > .content-card-image {
     grid-row: 1/2;
   }
 
