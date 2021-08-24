@@ -1,3 +1,5 @@
+@import url("./styles/components/buttons.css");
+
 /********** GLOBALS **********/
 :root {
   /***** COLOR PALETTE *****/
@@ -70,67 +72,3 @@ p,
   font-size: var(--font-size-body-1);
 }
 /********** END TYPOGRAPHY **********/
-
-/********** COMPONENTS **********/
-/***** START BUTTONS *****/
-button {
-  cursor: pointer;
-}
-
-.icon-button {
-  background-color: rgba(255, 255, 255, 0);
-  border: none;
-}
-
-.icon-button-image {
-  width: 28px;
-  height: 28px;
-}
-
-/* PRIMARY BUTTON GENERIC STYLING */
-.primary-button {
-  background-color: white;
-  border-radius: 25px;
-}
-
-.primary-button-text {
-  font-size: var(--font-size-body-1);
-  font-family: var(--font-style-primary);
-  font-weight: 900;
-}
-
-/* PRIMARY BUTTON FILLED */
-.primary-filled-button {
-  border: none;
-  /* padding: 12px 19px 12px 19px; */
-}
-
-/* PRIMARY BUTTON OUTLINED */
-.primary-outlined-button {
-  border: 1px solid black;
-}
-
-/* SPECIFIC BUTTONS */
-#order-now-button {
-  width: 128px;
-  height: 44px;
-}
-
-#see-this-weeks-menu-button {
-  width: 213px;
-  height: 44px;
-}
-
-#view-menu-button {
-  width: 141px;
-  height: 44px;
-}
-
-#see-dessert-of-the-week-button {
-  width: 238px;
-  height: 44px;
-}
-
-/***** END BUTTONS *****/
-
-/********** END COMPONENTS **********/
