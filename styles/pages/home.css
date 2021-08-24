@@ -1,0 +1,126 @@
+/***** START LANDING HERO *****/
+#landing-content {
+  position: absolute;
+  margin: var(--mobile-frame-margin);
+  color: var(--font-color-light);
+}
+
+#landing-image {
+  width: 100%;
+}
+/***** END LANDING HERO *****/
+
+/***** START CARDS *****/
+.content {
+  background-color: white;
+  width: 331px;
+  padding: 36px;
+}
+
+.secondary-content-card > .content > h2 {
+  margin: 0px 0px 16px 0px;
+}
+
+.secondary-content-card > .content > p {
+  margin: 0px 0px 32px 0px;
+}
+
+.content-card-image {
+  width: 100%;
+}
+/***** END CARDS *****/
+
+/********** START MOBILE MEDIA QUERY **********/
+#landing-description {
+  display: none;
+}
+/********** END MOBILE MEDIA QUERY **********/
+
+/********** START TABLET MEDIA QUERY **********/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /***** START LANDING HERO *****/
+  #landing-content {
+    position: static;
+    background-color: var(--tablet-hero-bg-color);
+    margin: 0px;
+    padding: var(--tablet-frame-margin);
+  }
+
+  .landing-content-text {
+    color: var(--font-color-light);
+  }
+
+  #landing-description {
+    display: block;
+  }
+  /***** END LANDING HERO *****/
+
+  /***** START CONTENT CARDS *****/
+  .content-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .content-card:nth-child(odd) > .content-card-image {
+    grid-row: 1/2;
+  }
+
+  .content {
+    width: auto;
+    margin: 0px;
+    padding: var(--tablet-frame-margin);
+  }
+
+  .content-card-image {
+    width: 100%;
+  }
+  /***** END CONTENT CARDS *****/
+}
+/********** END TABLET MEDIA QUERY **********/
+
+/********** START LAPTOP MEDIA QUERY **********/
+@media screen and (min-width: 1024px) {
+  /***** START LANDING HERO *****/
+  #landing-content {
+    position: static;
+    background-color: var(--tablet-hero-bg-color);
+    margin: 0px;
+    padding-top: var(--desktop-card-content-left-padding);
+    padding-left: var(--desktop-card-content-left-padding);
+  }
+
+  .landing-content-text {
+    color: var(--font-color-light);
+    margin-bottom: 32px;
+  }
+
+  #landing-description {
+    display: block;
+  }
+  /***** END LANDING HERO *****/
+
+  /***** START CONTENT CARDS *****/
+  .content-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    margin: var(--desktop-vertical-margin) var(--desktop-horizontal-margin)
+      var(--desktop-vertical-margin) var(--desktop-horizontal-margin);
+  }
+
+  .content-card:nth-child(odd) > .content-card-image {
+    grid-row: 1/2;
+  }
+
+  .content {
+    width: auto;
+    margin: 0px;
+    padding: var(--desktop-card-content-left-padding);
+  }
+
+  .content-card-image {
+    width: 100%;
+  }
+  /***** END CONTENT CARDS *****/
+}
+/********** END LAPTOP MEDIA QUERY **********/
