@@ -1,0 +1,8 @@
+body,
+header {
+  background-color: var(--mobile-menu-bg-color);
+}
+
+.nav-links {
+  color: var(--font-color-light);
+}
