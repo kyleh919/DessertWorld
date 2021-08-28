@@ -3,7 +3,7 @@ header {
   background-color: var(--header-bg-color);
 }
 
-#home > a,
+.nav-links,
 .nav-items > a {
   color: var(--font-color-dark);
   text-decoration: none;
