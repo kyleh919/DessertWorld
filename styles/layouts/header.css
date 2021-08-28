@@ -47,6 +47,10 @@ header > section > h1 {
   #nav-list {
     display: inline;
   }
+
+  .current-page > a {
+    text-decoration: underline  var(--font-color-dark) solid 2px;
+  }
   /***** END HEADER *****/
 }
 /********** END TABLET MEDIA QUERY **********/
@@ -67,6 +71,9 @@ header > section > h1 {
     display: inline;
   }
 
+  .current-page > a {
+    text-decoration: underline  var(--font-color-dark); solid 2px;
+  }
   /***** END HEADER *****/
 }
 /********** END LAPTOP MEDIA QUERY **********/

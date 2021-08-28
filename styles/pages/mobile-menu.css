@@ -6,3 +6,16 @@ header {
 .nav-links {
   color: var(--font-color-light);
 }
+
+.mobile-menu-nav-section > nav > ul > li {
+  list-style: none;
+}
+
+.mobile-menu-nav-items > a {
+  color: var(--font-color-light);
+  text-decoration: none;
+}
+
+.current-page > a {
+  text-decoration: underline var(--font-color-light) solid 2px;
+}
