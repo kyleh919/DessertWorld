@@ -1,0 +1,32 @@
+main {
+  margin: var(--mobile-frame-margin);
+}
+
+.menu-item {
+  padding: 10px;
+}
+
+.menu-item:hover {
+  background-color: rgb(228, 228, 228);
+}
+
+.menu-item > a {
+  display: flex;
+  align-items: center;
+
+  text-decoration: none;
+  color: var(--font-color-dark);
+}
+
+.menu-item-text {
+  flex: 1;
+}
+
+.menu-item-image {
+  order: -1;
+  margin-right: 24px;
+
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
