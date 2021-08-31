@@ -1,7 +1,10 @@
+/* START APPLYING MARGIN AROUND CONTENT FOR MOBILE VIEW */
 .page-content > :not(.product-description) {
   margin: var(--mobile-frame-margin);
 }
 
+/* Remove mobile margin for full-width images */
 .product-description > :not(img) {
   margin: var(--mobile-frame-margin);
 }
+/* STOP APPLYING MARGIN AROUND CONTENT FOR MOBILE VIEW */
