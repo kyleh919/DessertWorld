@@ -8,6 +8,8 @@
   --footer-bg-color: #f8f8f8;
   --tablet-hero-bg-color: #000203;
   --mobile-menu-bg-color: #252525;
+  --primary-button-fill-dark: #3f3f3f;
+  --primary-button-fill-light: #f8f8f8;
 
   /***** FONTS *****/
   --font-style-primary: Nunito;
