@@ -1,0 +1,14 @@
+.breadcrumbs {
+  font-size: var(--font-size-caption);
+  color: var(--font-color-caption);
+}
+
+.breadcrumbs-previous-page-link {
+  text-decoration: none;
+  color: var(--font-color-caption);
+  font-family: var(--font-style-secondary);
+}
+
+.breadcrumbs-current-page {
+  font-weight: bolder;
+}
