@@ -1,0 +1,7 @@
+.page-content > :not(.product-description) {
+  margin: var(--mobile-frame-margin);
+}
+
+.product-description > :not(img) {
+  margin: var(--mobile-frame-margin);
+}
