@@ -3,13 +3,17 @@
 /********** GLOBALS **********/
 :root {
   /***** COLOR PALETTE *****/
+  /* Backgrounds */
   --main-bg-color: #efefef;
   --header-bg-color: #f8f8f8;
   --footer-bg-color: #f8f8f8;
   --tablet-hero-bg-color: #000203;
   --mobile-menu-bg-color: #252525;
+  /* Buttons */
   --primary-button-fill-dark: #3f3f3f;
   --primary-button-fill-light: #f8f8f8;
+  /* Borders */
+  --input-border-color: #bababa;
 
   /***** FONTS *****/
   --font-style-primary: Nunito;
@@ -17,6 +21,7 @@
   --font-color-light: #f8f8f8;
   --font-color-dark: #0b0b0b;
   --font-color-caption: #575757;
+  --font-color-placeholder: #b6b6b6;
 
   /***** FONT SIZES *****/
   --font-size-header-1: 34px;
@@ -70,7 +75,9 @@ h2 {
 }
 
 p,
-.legal-links-items > a {
+.legal-links-items > a,
+input,
+textarea {
   font-family: var(--font-style-secondary);
   font-size: var(--font-size-body-1);
 }
