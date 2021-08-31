@@ -15,7 +15,12 @@ button {
 
 /* PRIMARY BUTTON GENERIC STYLING */
 .primary-button {
-  background-color: white;
+  background-color: var(--primary-button-fill-dark);
+  border-radius: 25px;
+}
+
+.primary-button-light {
+  background-color: var(--primary-button-fill-light);
   border-radius: 25px;
 }
 
@@ -55,6 +60,12 @@ button {
 #see-dessert-of-the-week-button {
   width: 238px;
   height: 44px;
+}
+
+#add-to-order {
+  width: 166px;
+  height: 50px;
+  color: var(--font-color-light);
 }
 
 /***** END BUTTONS *****/
