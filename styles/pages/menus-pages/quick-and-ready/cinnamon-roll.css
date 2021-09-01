@@ -1,3 +1,8 @@
+.product-description > h1 {
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
 .product-description {
   display: flex;
   flex-direction: column;
