@@ -5,6 +5,6 @@
 
 /* Remove mobile margin for full-width images */
 .product-description > :not(img) {
-  margin: var(--mobile-frame-margin);
+  margin: 0 var(--mobile-frame-margin) 0 var(--mobile-frame-margin);
 }
 /* STOP APPLYING MARGIN AROUND CONTENT FOR MOBILE VIEW */
