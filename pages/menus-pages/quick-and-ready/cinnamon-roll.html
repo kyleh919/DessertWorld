@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="../../../styles/components/textareas.css" />
     <link rel="stylesheet" href="../../../styles/components/breadcrumbs.css" />
     <link rel="stylesheet" href="../../../styles/components/buttons.css" />
+    <link rel="stylesheet" href="../../../styles/components/tables.css" />
     <link
       rel="stylesheet"
       href="../../../styles/pages/menus-pages/quick-and-ready/cinnamon-roll.css"
@@ -105,56 +106,60 @@
       </section>
 
       <section class="nutrition-information">
+        <h2>Nutrition Information</h2>
         <table>
           <thead>
             <tr>
-              <th>Serving Size</th>
-              <th>1 Cinnamon Roll</th>
+              <th class="table__major-header" colspan="2">
+                Serving Size 1 Cinnamon Roll
+              </th>
             </tr>
             <tr>
-              <th>Calories 140</th>
-              <th></th>
+              <th class="table__minor-header">
+                <span class="row-header">Calories</span> 140
+              </th>
+              <th class="table__minor-header"></th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td></td>
-              <td>% Daily Value</td>
+              <td class="secondary-info">% Daily Value</td>
             </tr>
             <tr>
-              <td>Total Fat 4.5g</td>
-              <td>6%</td>
+              <td><span class="row-header">Total Fat</span> 4.5g</td>
+              <td class="secondary-info">6%</td>
             </tr>
             <tr>
-              <td>Saturated Fat 2.5g</td>
-              <td>14%</td>
+              <td class="sub-row">Saturated Fat 2.5g</td>
+              <td class="secondary-info">14%</td>
             </tr>
             <tr>
-              <td>Trans Fat 0g</td>
+              <td class="sub-row">Trans Fat 0g</td>
               <td></td>
             </tr>
             <tr>
-              <td>Cholesterol 0mg</td>
+              <td><span class="row-header">Cholesterol</span> 0mg</td>
               <td></td>
             </tr>
             <tr>
-              <td>Sodium 340mg</td>
-              <td>15%</td>
+              <td><span class="row-header">Sodium</span> 340mg</td>
+              <td class="secondary-info">15%</td>
             </tr>
             <tr>
-              <td>Total Carbohydrate 24g</td>
-              <td>9%</td>
+              <td><span class="row-header">Total Carbohydrate</span> 24g</td>
+              <td class="secondary-info">9%</td>
             </tr>
             <tr>
-              <td>Dietary Fiber &lt1g</td>
-              <td>2%</td>
+              <td class="sub-row">Dietary Fiber &lt1g</td>
+              <td class="secondary-info">2%</td>
             </tr>
             <tr>
-              <td>Sugars 9g</td>
+              <td class="sub-row">Sugars 9g</td>
               <td></td>
             </tr>
             <tr>
-              <td>Protein 2g</td>
+              <td><span class="row-header">Protein</span> 2g</td>
               <td></td>
             </tr>
           </tbody>

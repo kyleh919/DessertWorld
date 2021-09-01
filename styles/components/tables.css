@@ -1,0 +1,41 @@
+table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 2px;
+}
+
+th {
+  font-weight: 500;
+  text-align: left;
+}
+
+.table__major-header {
+  border-bottom: 4px solid var(--table-border-color);
+}
+
+.table__minor-header {
+  border-bottom: 2px solid var(--table-border-color);
+}
+
+.table__rows {
+  border-bottom: 1px solid var(--table-border-color);
+}
+
+.row-header {
+  font-weight: bolder;
+}
+
+.sub-row {
+  text-indent: 8px;
+}
+
+.secondary-info {
+  text-align: right;
+}
+
+td {
+  border-bottom: 1px solid var(--table-border-color);
+}

@@ -14,6 +14,7 @@
   --primary-button-fill-light: #f8f8f8;
   /* Borders */
   --input-border-color: #bababa;
+  --table-border-color: #c4c4c4;
 
   /***** FONTS *****/
   --font-style-primary: Nunito;
@@ -76,8 +77,8 @@ h2 {
 
 p,
 .legal-links-items > a,
-input,
-textarea {
+textarea,
+table {
   font-family: var(--font-style-secondary);
   font-size: var(--font-size-body-1);
 }
