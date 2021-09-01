@@ -78,7 +78,8 @@ h2 {
 p,
 .legal-links-items > a,
 textarea,
-table {
+table,
+input {
   font-family: var(--font-style-secondary);
   font-size: var(--font-size-body-1);
 }
