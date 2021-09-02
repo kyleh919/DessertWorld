@@ -1,5 +1,5 @@
 p.breadcrumbs {
-  margin: 12px 0 12px 0;
+  margin: 12px var(--mobile-frame-margin) 12px var(--mobile-frame-margin);
   font-size: var(--font-size-caption);
   color: var(--font-color-caption);
 }
