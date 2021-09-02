@@ -2,6 +2,10 @@
   display: grid;
 }
 
+.page-content > aside {
+  display: none;
+}
+
 /********** START TABLET MEDIA QUERY **********/
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .menu-item-list {
@@ -14,6 +18,20 @@
 @media screen and (min-width: 1024px) {
   .menu-item-list {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .page-content > aside {
+    display: inline;
+  }
+
+  .page-content {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  aside {
+    grid-column: 1/2;
+    grid-row: 1/2;
   }
 }
 /********** END LAPTOP MEDIA QUERY **********/
