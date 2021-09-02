@@ -1,0 +1,19 @@
+.menu-item-list {
+  display: grid;
+}
+
+/********** START TABLET MEDIA QUERY **********/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .menu-item-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/********** END TABLET MEDIA QUERY **********/
+
+/********** START LAPTOP MEDIA QUERY **********/
+@media screen and (min-width: 1024px) {
+  .menu-item-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/********** END LAPTOP MEDIA QUERY **********/
