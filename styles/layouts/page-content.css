@@ -1,10 +1,37 @@
 /* START APPLYING MARGIN AROUND CONTENT FOR MOBILE VIEW */
-.page-content > :not(.product-description) {
+.page-content {
   margin: var(--mobile-frame-margin);
 }
 
-/* Remove mobile margin for full-width images */
-.product-description > :not(img) {
-  margin: 0 var(--mobile-frame-margin) 0 var(--mobile-frame-margin);
+/* Remove margin for product header images to span full screen */
+.product-header-image {
+  margin: 0 calc(var(--mobile-frame-margin) * -1) 0
+    calc(var(--mobile-frame-margin) * -1);
 }
 /* STOP APPLYING MARGIN AROUND CONTENT FOR MOBILE VIEW */
+
+/********** START TABLET MEDIA QUERY **********/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .page-content {
+    margin: var(--tablet-frame-margin);
+  }
+
+  .product-header-image {
+    margin: 0 calc(var(--tablet-frame-margin) * -1) 0
+      calc(var(--tablet-frame-margin) * -1);
+  }
+}
+/********** END TABLET MEDIA QUERY **********/
+
+/********** START LAPTOP MEDIA QUERY **********/
+@media screen and (min-width: 1024px) {
+  .page-content {
+    margin: var(--desktop-horizontal-margin);
+  }
+
+  .product-header-image {
+    margin: 0 calc(var(--desktop-horizontal-margin) * -1) 0
+      calc(var(--desktop-horizontal-margin) * -1);
+  }
+}
+/********** END LAPTOP MEDIA QUERY **********/
