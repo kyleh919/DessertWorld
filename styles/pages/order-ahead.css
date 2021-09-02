@@ -2,8 +2,16 @@
     margins for children of the main
     element - see page-contents.css */
 
+main > section {
+  display: grid;
+}
+
 input {
   margin-bottom: 16px;
+}
+
+.menu-item-in-order {
+  margin-bottom: 4px;
 }
 
 #total {
@@ -18,3 +26,37 @@ input {
 #total > p:first-child {
   margin-right: 64px;
 }
+
+/********** START TABLET MEDIA QUERY **********/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  input {
+    margin-bottom: 24px;
+  }
+
+  .menu-item-in-order {
+    margin-bottom: 8px;
+  }
+
+  main > section {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 92px;
+  }
+}
+/********** END TABLET MEDIA QUERY **********/
+
+/********** START LAPTOP MEDIA QUERY **********/
+@media screen and (min-width: 1024px) {
+  input {
+    margin-bottom: 32px;
+  }
+
+  .menu-item-in-order {
+    margin-bottom: 16px;
+  }
+
+  main > section {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 92px;
+  }
+}
+/********** END LAPTOP MEDIA QUERY **********/
