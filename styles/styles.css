@@ -27,6 +27,7 @@
   /***** FONT SIZES *****/
   --font-size-header-1: 34px;
   --font-size-header-2: 28px;
+  --font-size-order-total: 22px;
   --font-size-body-1: 18px;
   --font-size-nav-items: 18px;
   --font-size-caption: 13px;
@@ -82,5 +83,10 @@ table,
 input {
   font-family: var(--font-style-secondary);
   font-size: var(--font-size-body-1);
+}
+
+#total > p {
+  font-size: var(--font-size-order-total);
+  font-weight: bolder;
 }
 /********** END TYPOGRAPHY **********/
