@@ -1,8 +1,10 @@
-.menu-item {
+.menu-item,
+.menu-item-in-order {
   padding: 10px;
 }
 
-.menu-item:hover {
+.menu-item:hover,
+.menu-item-in-order:hover {
   background-color: rgb(228, 228, 228);
 }
 
@@ -14,8 +16,28 @@
   color: var(--font-color-dark);
 }
 
+.menu-item-in-order > a {
+  display: flex;
+
+  text-decoration: none;
+  color: var(--font-color-dark);
+}
+
 .menu-item-text {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 0 16px 0 0;
+}
+
+.menu-item-primary-text {
+  margin: 8px 0 2px 0;
+}
+
+.menu-item-secondary-text {
+  margin: 0;
+  font-size: var(--font-size-caption);
+  color: var(--font-color-caption);
 }
 
 .menu-item-image {
@@ -25,4 +47,8 @@
   height: 80px;
   width: 80px;
   border-radius: 50%;
+}
+
+.menu-item-cost {
+  margin: 8px 0 0 0;
 }
