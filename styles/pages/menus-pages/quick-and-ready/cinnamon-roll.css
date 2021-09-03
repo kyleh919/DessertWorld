@@ -1,3 +1,8 @@
+.page-content {
+  display: grid;
+  grid-template-columns: 100%;
+}
+
 .product-description > h1 {
   margin-top: 16px;
   margin-bottom: 8px;
@@ -15,3 +20,26 @@
 .product-description > img {
   order: -1;
 }
+
+.nutrition-information > table {
+  width: 100%;
+}
+
+/********** START TABLET MEDIA QUERY **********/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  img {
+    height: 396px;
+    object-fit: cover;
+  }
+
+  .product-description > h1 {
+    margin-top: 24px;
+    margin-bottom: 16px;
+  }
+}
+/********** END TABLET MEDIA QUERY **********/
+
+/********** START LAPTOP MEDIA QUERY **********/
+@media screen and (min-width: 1024px) {
+}
+/********** END LAPTOP MEDIA QUERY **********/
