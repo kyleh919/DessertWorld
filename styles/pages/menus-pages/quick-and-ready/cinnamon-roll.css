@@ -41,5 +41,26 @@
 
 /********** START LAPTOP MEDIA QUERY **********/
 @media screen and (min-width: 1024px) {
+  .product-description {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .product-description > img {
+    grid-column: 1/2;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .product-details {
+    text-align: center;
+    background-color: rgb(32, 32, 32);
+    color: white;
+    padding: 10%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 /********** END LAPTOP MEDIA QUERY **********/
