@@ -26,7 +26,8 @@
 /********** START LAPTOP MEDIA QUERY **********/
 @media screen and (min-width: 1024px) {
   .page-content {
-    margin: var(--desktop-horizontal-margin);
+    margin: var(--desktop-vertical-margin) var(--desktop-horizontal-margin)
+      var(--desktop-vertical-margin) var(--desktop-horizontal-margin);
   }
 
   .product-header-image {
