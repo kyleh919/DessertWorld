@@ -1,0 +1,53 @@
+#landing-content {
+  position: absolute;
+  margin: var(--mobile-frame-margin);
+  color: var(--font-color-light);
+}
+
+#landing-image {
+  width: 100%;
+}
+
+#landing-description {
+  display: none;
+}
+
+/********** START TABLET MEDIA QUERY **********/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  #landing-content {
+    position: static;
+    background-color: var(--tablet-hero-bg-color);
+    margin: 0px;
+    padding: var(--tablet-frame-margin);
+  }
+
+  .landing-content-text {
+    color: var(--font-color-light);
+  }
+
+  #landing-description {
+    display: block;
+  }
+}
+/********** END TABLET MEDIA QUERY **********/
+
+/********** START LAPTOP MEDIA QUERY **********/
+@media screen and (min-width: 1024px) {
+  #landing-content {
+    position: static;
+    background-color: var(--tablet-hero-bg-color);
+    margin: 0px;
+    padding-top: var(--desktop-card-content-left-padding);
+    padding-left: var(--desktop-card-content-left-padding);
+  }
+
+  .landing-content-text {
+    color: var(--font-color-light);
+    margin-bottom: 32px;
+  }
+
+  #landing-description {
+    display: block;
+  }
+}
+/********** END LAPTOP MEDIA QUERY **********/
