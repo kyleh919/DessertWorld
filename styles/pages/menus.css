@@ -21,7 +21,7 @@
 }
 /********** END TABLET MEDIA QUERY **********/
 
-/********** START LAPTOP MEDIA QUERY **********/
+/********** START DESKTOP MEDIA QUERY **********/
 @media screen and (min-width: 1024px) {
   .menu-item-list {
     grid-template-columns: 1fr 1fr;
@@ -44,4 +44,4 @@
     grid-row: 1/2;
   }
 }
-/********** END LAPTOP MEDIA QUERY **********/
+/********** END DESKTOP MEDIA QUERY **********/

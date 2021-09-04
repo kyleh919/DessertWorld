@@ -44,7 +44,7 @@ input {
 }
 /********** END TABLET MEDIA QUERY **********/
 
-/********** START LAPTOP MEDIA QUERY **********/
+/********** START DESKTOP MEDIA QUERY **********/
 @media screen and (min-width: 1024px) {
   input {
     margin-bottom: 32px;
@@ -59,4 +59,4 @@ input {
     column-gap: 92px;
   }
 }
-/********** END LAPTOP MEDIA QUERY **********/
+/********** END DESKTOP MEDIA QUERY **********/

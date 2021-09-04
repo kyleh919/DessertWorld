@@ -55,7 +55,7 @@ header > section > h1 {
 }
 /********** END TABLET MEDIA QUERY **********/
 
-/********** START LAPTOP MEDIA QUERY **********/
+/********** START DESKTOP MEDIA QUERY **********/
 @media screen and (min-width: 1024px) {
   /***** START HEADER *****/
   header > section {
@@ -76,4 +76,4 @@ header > section > h1 {
   }
   /***** END HEADER *****/
 }
-/********** END LAPTOP MEDIA QUERY **********/
+/********** END DESKTOP MEDIA QUERY **********/

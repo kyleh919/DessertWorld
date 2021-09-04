@@ -39,7 +39,7 @@
 }
 /********** END TABLET MEDIA QUERY **********/
 
-/********** START LAPTOP MEDIA QUERY **********/
+/********** START DESKTOP MEDIA QUERY **********/
 @media screen and (min-width: 1024px) {
   .product-description {
     display: grid;
@@ -63,4 +63,4 @@
     justify-content: center;
   }
 }
-/********** END LAPTOP MEDIA QUERY **********/
+/********** END DESKTOP MEDIA QUERY **********/

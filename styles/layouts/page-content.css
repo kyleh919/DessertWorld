@@ -23,7 +23,7 @@
 }
 /********** END TABLET MEDIA QUERY **********/
 
-/********** START LAPTOP MEDIA QUERY **********/
+/********** START DESKTOP MEDIA QUERY **********/
 @media screen and (min-width: 1024px) {
   .page-content {
     margin: var(--desktop-vertical-margin) var(--desktop-horizontal-margin)
@@ -35,4 +35,4 @@
       calc(var(--desktop-horizontal-margin) * -1);
   }
 }
-/********** END LAPTOP MEDIA QUERY **********/
+/********** END DESKTOP MEDIA QUERY **********/
