@@ -12,20 +12,12 @@
   margin: 0px 0px 32px 0px;
 }
 
-.content-image {
-  width: 100%;
-}
-
 /********** START TABLET MEDIA QUERY **********/
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .content-card {
     width: auto;
     margin: 0px;
     padding: var(--tablet-frame-margin);
-  }
-
-  .content-image {
-    width: 100%;
   }
 }
 /********** END TABLET MEDIA QUERY **********/
@@ -36,10 +28,6 @@
     width: auto;
     margin: 0px;
     padding: var(--desktop-card-content-left-padding);
-  }
-
-  .content-image {
-    width: 100%;
   }
 }
 /********** END DESKTOP MEDIA QUERY **********/
