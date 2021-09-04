@@ -1,3 +1,7 @@
+.menu > h1 {
+  margin: 0;
+}
+
 .menu-item-list {
   display: grid;
   row-gap: 4px;
@@ -27,6 +31,7 @@
 
   .page-content > aside {
     display: inline;
+    margin-top: 80px;
   }
 
   .page-content {

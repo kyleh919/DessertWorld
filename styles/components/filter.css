@@ -1,3 +1,14 @@
+.nav__filter > div > h4 {
+  margin: 0;
+}
+
 .nav__filter > div > ul {
   list-style: none;
+  padding: 0px;
+  margin: 18px 0 40px 0;
+}
+
+.nav__filter > div > ul > li {
+  margin-bottom: 16px;
+  color: #8a8a8a;
 }
