@@ -18,12 +18,12 @@
 
 /********** START TABLET MEDIA QUERY **********/
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .content-card {
+  .content-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 
-  .content-card:nth-child(odd) > .content-card-image {
+  .content-section:nth-child(odd) > .content-card-image {
     grid-row: 1/2;
   }
 
@@ -41,7 +41,7 @@
 
 /********** START DESKTOP MEDIA QUERY **********/
 @media screen and (min-width: 1024px) {
-  .content-card {
+  .content-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
 
@@ -49,7 +49,7 @@
       var(--desktop-vertical-margin) var(--desktop-horizontal-margin);
   }
 
-  .content-card:nth-child(odd) > .content-card-image {
+  .content-section:nth-child(odd) > .content-card-image {
     grid-row: 1/2;
   }
 
