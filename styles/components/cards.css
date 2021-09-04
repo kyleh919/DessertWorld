@@ -18,15 +18,6 @@
 
 /********** START TABLET MEDIA QUERY **********/
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .content-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .content-section:nth-child(odd) > .content-image {
-    grid-row: 1/2;
-  }
-
   .content-card {
     width: auto;
     margin: 0px;
@@ -41,18 +32,6 @@
 
 /********** START DESKTOP MEDIA QUERY **********/
 @media screen and (min-width: 1024px) {
-  .content-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-    margin: var(--desktop-vertical-margin) var(--desktop-horizontal-margin)
-      var(--desktop-vertical-margin) var(--desktop-horizontal-margin);
-  }
-
-  .content-section:nth-child(odd) > .content-image {
-    grid-row: 1/2;
-  }
-
   .content-card {
     width: auto;
     margin: 0px;
