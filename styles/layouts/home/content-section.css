@@ -2,6 +2,24 @@
   width: 100%;
 }
 
+/********** START MOBILE MEDIA QUERY **********/
+@media screen and (max-width: 768px) {
+  .secondary-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .secondary-content > img {
+    order: -1;
+  }
+
+  .content-card {
+    transform: translateY(-50px);
+  }
+}
+/********** END MOBILE MEDIA QUERY **********/
+
 /********** START TABLET MEDIA QUERY **********/
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .content-section {
