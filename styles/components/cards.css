@@ -1,15 +1,15 @@
-.content {
-  background-color: white;
-  width: 331px;
-  padding: 36px;
-}
-
 .secondary-content-card > .content > h2 {
   margin: 0px 0px 16px 0px;
 }
 
 .secondary-content-card > .content > p {
   margin: 0px 0px 32px 0px;
+}
+
+.content-card {
+  background-color: white;
+  width: 331px;
+  padding: 36px;
 }
 
 .content-card-image {
@@ -27,7 +27,7 @@
     grid-row: 1/2;
   }
 
-  .content {
+  .content-card {
     width: auto;
     margin: 0px;
     padding: var(--tablet-frame-margin);
@@ -53,7 +53,7 @@
     grid-row: 1/2;
   }
 
-  .content {
+  .content-card {
     width: auto;
     margin: 0px;
     padding: var(--desktop-card-content-left-padding);
