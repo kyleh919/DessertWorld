@@ -1,15 +1,15 @@
-.secondary-content > .content-card > h2 {
-  margin: 0px 0px 16px 0px;
-}
-
-.secondary-content > .content-card > p {
-  margin: 0px 0px 32px 0px;
-}
-
 .content-card {
   background-color: white;
   width: 331px;
   padding: 36px;
+}
+
+.content-card > h2 {
+  margin: 0px 0px 16px 0px;
+}
+
+.content-card > p {
+  margin: 0px 0px 32px 0px;
 }
 
 .content-image {
