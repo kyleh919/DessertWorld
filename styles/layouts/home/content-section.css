@@ -1,6 +1,5 @@
 .content-image {
   width: 100%;
-  height: 100%;
 }
 
 /********** START MOBILE MEDIA QUERY **********/
@@ -31,6 +30,11 @@
   .content-section:nth-child(odd) > .content-image {
     grid-row: 1/2;
   }
+
+  .content-image {
+    height: 500px;
+    object-fit: cover;
+  }
 }
 /********** END TABLET MEDIA QUERY **********/
 
@@ -46,6 +50,11 @@
 
   .content-section:nth-child(odd) > .content-image {
     grid-row: 1/2;
+  }
+
+  .content-image {
+    height: 800px;
+    object-fit: cover;
   }
 }
 /********** END DESKTOP MEDIA QUERY **********/
