@@ -26,4 +26,9 @@ header {
 
 .current-page > a {
   text-decoration: underline var(--font-color-light) solid 2px;
+
+  -webkit-text-decoration-line: underline;
+  -webkit-text-decoration-color: var(--font-color-light);
+  -webkit-text-decoration-style: solid;
+  -webkit-text-decoration-thickness: 2px;
 }
