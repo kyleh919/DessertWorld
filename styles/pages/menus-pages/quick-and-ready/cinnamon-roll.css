@@ -25,6 +25,15 @@
   width: 100%;
 }
 
+/********** START MOBILE MEDIA QUERY **********/
+@media screen and (max-width: 768px) {
+  img {
+    height: 396px;
+    object-fit: cover;
+  }
+}
+/********** END MOBILE MEDIA QUERY **********/
+
 /********** START TABLET MEDIA QUERY **********/
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   img {
