@@ -75,7 +75,8 @@ h2 {
   font-size: var(--font-size-header-2);
 }
 
-h3 {
+h3,
+.mobile-menu-nav-items > a {
   font-size: var(--font-size-header-3);
 }
 

@@ -15,13 +15,12 @@ header {
 
 .mobile-menu-nav-section > nav > ul > li {
   list-style: none;
-  margin: 30px;
+  margin: 40px;
 }
 
 .mobile-menu-nav-items > a {
   color: var(--font-color-light);
   text-decoration: none;
-  font-size: var(--font-size-nav-items);
 }
 
 .current-page > a {
