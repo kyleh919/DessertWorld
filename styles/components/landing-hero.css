@@ -4,10 +4,6 @@
   color: var(--font-color-light);
 }
 
-#landing-image {
-  width: 100%;
-}
-
 #landing-description {
   display: none;
 }
